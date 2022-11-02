@@ -14,7 +14,6 @@ body {
     background-image: url(/img/V7xo003sr2I.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
-    height: 550px;
 }
 .bg__img1 {
     background-color: rgb(247, 247, 247);
@@ -28,7 +27,7 @@ body {
 }
 
 .window__news {
-    padding-top: 75px;
+    padding: 30px;
 }
 
 .card__news-flex {
@@ -39,7 +38,7 @@ body {
 }
 
 .card__news-item1 {
-    width: 800px;
+    width: 700px;
     min-height: 400px;
     background: rgba(0, 0, 0, 0.6);
     text-align: center;
@@ -292,18 +291,10 @@ i {
     font-size: 30px;
     margin-right: 20px;
 }
-.fa-sharp.fa-solid.fa-chevron-left {
-    margin-left: 16px;
-    font-size: 60px;
-}
+.fa-sharp.fa-solid.fa-chevron-left,
 .fa-sharp.fa-solid.fa-chevron-right {
-    /* margin-left: 16px; */
-    font-size: 60px;
+    font-size: 50px;
 }
-/* .fa-sharp.fa-solid:hover {
-    margin-left: 16px;
-
-} */
 
 .fa-arrow-right-long {
     font-size: 40px;
@@ -383,7 +374,7 @@ button {
 
 .img__fluid {
     max-width: 100%;
-    height: 460px;
+    max-height: 460px;
 }
 
 .preview__flex {
@@ -405,7 +396,7 @@ button {
 
 /* Slider */
 
-.slider__flex {
+.slider__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
@@ -419,6 +410,19 @@ button {
     background-color: rgb(182, 203, 222);
 }
 
+.controls__left {
+    margin-left: 200px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+.controls__right {
+    margin-right: 200px;
+    padding: 10px;
+    z-index: 1;
+    cursor: pointer;
+}
+
 .photo__card {
     padding: 50px;
     text-align: center;
@@ -426,4 +430,14 @@ button {
 
 .hidden {
     display: none;
+}
+
+.img__arrow-right {
+    width: 70px;
+    height: auto;
+}
+.img__arrow-left {
+    transform: rotate(180deg);
+    width: 70px;
+    height: auto;
 }
