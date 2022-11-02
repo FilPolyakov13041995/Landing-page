@@ -114,31 +114,42 @@
                 <img src="img/check.jpg" class="img__fluid" alt="check">
             </div>
         </div>
-        <!-- <div class="preview__flex">
-            <div class="preview__flex-item">
-                <p class="preview__match">Превью следующего матча</p>
-            </div>
-            <div class="preview__flex-item">
-                <i class="fa-sharp fa-solid fa-arrow-right-long btnNext"></i>
-            </div>
-        </div> -->
-        <div class="photo__card">
-            <h2>Фотоотчёт матча</h2>
-        </div>
-        <div class="slider__grid">
-            <div class="controls__left grid-item1">
-                <img src="img/kisspng-arrow-computer-icons-clip-art-right-arrow-5ac4674a126746.6354426115228209380754.png" class="img__arrow-left" id="btnP" alt="">
-                <!-- <i class="fa-sharp fa-solid fa-chevron-left btnP" id="btnP"></i> -->
+        <div class="slider__flex">
+            <div class="controls__left">
+                <img src="img/arrowSlider.png" class="img__arrow-left" id="btnP" alt="">
             </div>
             <div class="slider" id="slider">
-                <img src="img/1.jpg" class="img__fluid" alt="Slide 01"> 
-                <img src="img/2.jpg" class="img__fluid" alt="Slide 02">
-                <img src="img/3.jpg" class="img__fluid" alt="Slide 03">
-                <img src="img/4.jpg" class="img__fluid" alt="Slide 04">
+                <img src="img/1.jpg" class="img__fluid" width="550" alt="Slide 01"> 
+                <img src="img/2.jpg" class="img__fluid" width="550" alt="Slide 02">
+                <img src="img/3.jpg" class="img__fluid" width="550" alt="Slide 03">
+                <img src="img/4.jpg" class="img__fluid" width="550" alt="Slide 04">
             </div>
-            <div class="controls__right grid-item2">
-                <img src="img/kisspng-arrow-computer-icons-clip-art-right-arrow-5ac4674a126746.6354426115228209380754.png" class="img__arrow-right" id="btnN" alt="">
-                <!-- <i class="fa-sharp fa-solid fa-chevron-right btnN" id="btnN"></i> -->
+            <div class="controls__right">
+                <img src="img/arrowSlider.png" class="img__arrow-right" id="btnN" alt="">
+            </div>
+            <div class="modal__window">
+                <h2>Видеообзор матча</h2>
+                <div class="btn__modal" data-modal>
+                    <div class="itd__triangle"></div>
+                </div>
+                <div class="modal hide">
+                    <div class="modal__dialog">
+                        <div class="modal__content">
+                            <div class="modal__flex">
+                                <div class="modal__flex-item">
+                                    <p class="text__match-review">Ж-Ю - Крумкачи(обзор)</p>
+                                </div>
+                                <div class="modal__flex-item">
+                                    <div data-close class="modal__close">&times;</div>
+                                </div>
+                            </div>
+                            <div class="modal__border"></div>
+                            <div class="video__mast">
+                                <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed//W7xGBJg5pJQ' frameborder='0' allowfullscreen></iframe></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="preview__flex">
@@ -190,6 +201,7 @@
 
     <script src="js/script.js"></script>
     <script src="js/slider.js"></script>
+    <script src="js/modal.js"></script>
 
 </body>
 </html>
