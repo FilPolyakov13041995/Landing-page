@@ -285,32 +285,20 @@ i {
     cursor: pointer;
 }
 
-.fa-brands,
-.fa-solid,
-.fa-duotone {
+.fa-vk,
+.fa-instagram,
+.fa-telegram,
+.fa-envelope,
+.fa-clock {
     font-size: 30px;
-    margin-right: 20px;
-}
-.fa-sharp.fa-solid.fa-chevron-left,
-.fa-sharp.fa-solid.fa-chevron-right {
-    font-size: 50px;
+    /* margin-right: 20px; */
 }
 
-.fa-arrow-right-long {
-    font-size: 40px;
-}
-.fa-arrow-left-long {
-    font-size: 40px;
-}
-
-.fa-brands:hover {
+.fa-vk:hover,
+.fa-instagram:hover,
+.fa-telegram:hover,
+.fa-envelope:hover {
     color: black;
-}
-.fa-solid:hover {
-    color: black;
-}
-.not__margin {
-    margin: 0;
 }
 
 .text__footer {
@@ -336,17 +324,18 @@ button {
 
 .flex__previous {
     display: flex;
-    justify-content: space-around;
-    gap: 15px;
+    justify-content: center;
+    gap: 2.5rem;
+    margin-top: 40px;
 }
 
 .flex__item-previous1 {
     width: 750px;
     min-height: 460px;
-    background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/wild_oliva.png");
-    color: #fff;
+    /* background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/wild_oliva.png"); */
+    color: #000;
+    font-weight: 500;
     padding: 0px 20px 0px 20px;
-    margin-top: 50px;
 }
 
 .true {
@@ -366,10 +355,9 @@ button {
 }
 
 .flex__item-previous2 {
-    width: 500px;
+    width: 460px;
     max-height: 460px;
     color: #fff;
-    margin-top: 50px;
 }
 
 .img__fluid {
