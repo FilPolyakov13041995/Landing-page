@@ -32,11 +32,11 @@
                 <a href="#!"><li class="title__menu">История</li></a>
                 <a href="#!"><li class="title__menu">Контакты</li></a>
             </ul>
-            <!-- <a class="burger">
+            <!-- <div class="burger">
                 <span class="burger__line"></span>
                 <span class="burger__line"></span>
                 <span class="burger__line"></span>
-            </a> -->
+            </div> -->
         </div>
     </div>
 </header>
@@ -66,7 +66,6 @@
                             <img src="img/logored.png" class="logofc" alt="logored">
                         </div>
                     </div>
-                    <!-- <a href="news.html"><button class="last__detailed-match">Превью</button></a> -->
                 </div>
                 <div class="card__news-item2">
                     <p class="text__news-last">Первый матч 1/4</p>
@@ -84,7 +83,7 @@
                             <img src="img/krumka_logo_red.png" class="img__last-match" alt="krumka_logo_red">
                         </div>
                     </div>
-                    <button class="last__detailed-match btnNext">Подробности</button>
+                    <button id="btnNext" class="last__detailed-match">Подробности</button>
                 </div>
             </div>
         </div>
@@ -92,13 +91,11 @@
 </div>
 
 <div class="news-item">
+<div class="container">
     <div class="bg__img1">
-        <div class="two">
-            <p class="text__news-two">Завершился первый матч</p>
-        </div>
-        <div class="flex__previous">
+        <div class="previous__grid">
             <div class="flex__item-previous1">
-                <p class="true">Честно об игре</p>
+                <h2 class="true">Честно об игре</h2>
                 <p class="txt-indent">💪Знатное рубилово мы с вами посмотрели на стадионе Торпедо!
                 ☀️Шикарная погода, топовое поле, много людей на трибуне - праздник какой-то.
                 🏟️Игра проходила с переменным успехом у обеих команд. Киперы в этом матче были на высоте, тащили все, что только можно и мяч отказывался влетать долгое время в сетку ворот.</p>
@@ -107,28 +104,56 @@
                 <p class="txt-indent">🤗Наверное, справедливый результат в виде ничьи, двух достойных бригад.
                 Спасибо всем, кто был с нами в этот день!</p>
                 <p class="txt-indent">🙏Спасибо руководству БелАЗа за подарок - мы классно провели время на главной арене города!
-                🚇Ответный матч пройдёт в Минске, через неделю. Мы будет сражаться до конца, вперед Ж-Ю!❤️</p>
-              
-            </div>
+                🚇Ответный матч пройдёт в Минске, через неделю. Мы будет сражаться до конца, вперед Ж-Ю!❤️</p></div>
+
             <div class="flex__item-previous2">
                 <img src="img/check.jpg" class="img__fluid" alt="check">
             </div>
-        </div>
-        <div class="slider__flex">
-            <div class="controls__left">
-                <img src="img/arrowSlider.png" class="img__arrow-left" id="btnP" alt="">
+
+            <div class="offer__slider">
+                <!-- <div class="offer__slider-counter"> -->
+                    <div class="offer__slider-prev">
+                        <img src="img/arrowSlider.png" id="current" class="img__arrow-left" id="btnP" alt="">
+                    </div>
+                    <div class="offer__slider-wrapper">
+                        <div class="offer__slider-inner">
+                            <div class="offer__slide">
+                                <img src="img/1.jpg" class="img__fluid" width="550" alt="Slide 01"> 
+                            </div>
+                            <div class="offer__slide">
+                                <img src="img/2.jpg" class="img__fluid" width="550" alt="Slide 02">
+                            </div>
+                            <div class="offer__slide">
+                                <img src="img/3.jpg" class="img__fluid" width="550" alt="Slide 03">
+                            </div>
+                            <div class="offer__slide">
+                                <img src="img/4.jpg" class="img__fluid" width="550" alt="Slide 04">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offer__slider-next">
+                        <img src="img/arrowSlider.png" id="total" class="img__arrow-right" id="btnN" alt="">
+                    </div>
+                    
+                <!-- </div> -->
             </div>
-            <div class="slider" id="slider">
-                <img src="img/1.jpg" class="img__fluid" width="550" alt="Slide 01"> 
-                <img src="img/2.jpg" class="img__fluid" width="550" alt="Slide 02">
-                <img src="img/3.jpg" class="img__fluid" width="550" alt="Slide 03">
-                <img src="img/4.jpg" class="img__fluid" width="550" alt="Slide 04">
-            </div>
-            <div class="controls__right">
-                <img src="img/arrowSlider.png" class="img__arrow-right" id="btnN" alt="">
-            </div>
+
+            <!-- <div class="slider__flex">
+                <div class="controls__left">
+                    <img src="img/arrowSlider.png" class="img__arrow-left" id="btnP" alt="">
+                </div>
+                <div class="slider" id="slider">
+                    <img src="img/1.jpg" class="img__fluid" width="550" alt="Slide 01"> 
+                    <img src="img/2.jpg" class="img__fluid" width="550" alt="Slide 02">
+                    <img src="img/3.jpg" class="img__fluid" width="550" alt="Slide 03">
+                    <img src="img/4.jpg" class="img__fluid" width="550" alt="Slide 04">
+                </div>
+                <div class="controls__right">
+                    <img src="img/arrowSlider.png" class="img__arrow-right" id="btnN" alt="">
+                </div>
+            </div> -->
             <div class="modal__window">
-                <h2>Видеообзор матча</h2>
+                <h2 class="text__video">Видеообзор матча</h2>
                 <div class="btn__modal" data-modal>
                     <div class="itd__triangle"></div>
                 </div>
@@ -152,33 +177,70 @@
                 </div>
             </div>
         </div>
+        
         <div class="preview__flex">
             <div class="preview__flex-item">
-                <p class="preview__match">Превью следующего матча</p>
+                <img src="img/grunge-arrow-2-1.png" id="btnPrev" class="grunge-arrow-left" alt="grunge-arrow">
             </div>
             <div class="preview__flex-item">
-                <i class="fa-sharp fa-solid fa-arrow-right-long btnNext"></i>
+                <p class="preview__match">Анонс следующего матча</p>
+                <img src="img/grunge-arrow-2-1.png" id="btnNext" class="grunge-arrow" alt="grunge-arrow">
+            </div>
+        </div>
+     </div>
+</div>
+    
+</div>
+
+    <div class="news-item bg-item">
+        <div class="container">
+            <div class="bg__img2">
+                <div class="bg__img-item">
+                    <img src="img/return.jpg" class="img__fluid" alt="return">
+                </div>
+                <div class="text-item2">
+                    <p class="txt-indent">🔥Горячие выходные нас ждут!</p>
+                    <p class="txt-indent">🧐23 октября, в день рождения нашего кореша, Эдсона Арантиса ду Насименту, он же ПЕЛЕ, играем ответку с НФК Крумкачы.</p>
+                        👉Первый матч был очень тяжелым для обеих команд, качели на поле и как итог боевая ничья.
+                    <p class="txt-indent">🤣Бразильцы из Ж-Ю очень серьезно готовятся к встрече, даже на тренировку пришли, так что все понимают важность матча. Хотя, пару пентакампеонов под вопросом, но мы с ними разберёмся.</p>
+                    <p class="txt-indent">😏Пожалуй, на данном этапе, это самая важная встреча сезона, где нам будет не просто. Хотелось бы видеть своих любимых болельщиков на трибунах РЦОР БГУ в это воскресенье.
+                        Тем более, играем в день Евлампия Зимоуказателя. На Евлампия рога месяца показывают на ту сторону, откуда быть ветрам! Чтобы это не значило, но вы поймете в 15:40 откуда ветер дует😂</p>
+                    <p class="txt-indent">🙏Ждём всех суппортеров на стадионе! Вперёд Ж-Ю!</p>
+                </div>
+            </div>
+            <div class="timer__match">
+                <div class="Time">
+                    <h4>До игры с ФК "Крумкачи" осталось:</h4>
+                    <div class="timer">
+                        <div class="timer__block">
+                            <span class="days">12</span><br>
+                            дней
+                        </div>
+                        <div class="timer__block">
+                            <span class="hours">20</span><br>
+                            часов
+                        </div>
+                        <div class="timer__block">
+                            <span class="minutes">56</span><br>
+                            минут
+                        </div>
+                        <div class="timer__block">
+                            <span class="seconds">20</span><br>
+                            секунд
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         
-        
     </div>
+
+
+
 </div>
 
 
-<div class="news-item">
-    <div class="bg__img2">
-        
-        <div class="bg__img-item">
-            <p class="text__news-three">Мы в 1/4 финала</p>
-        </div>
-        <div class="bg__img-item">
-            <button class="btn__news btnNext">Переключить новость</button>
-        </div>
-        
-    </div>
-</div>
-</div>
+
 <footer class="footer">
     <div class="tel-item">
         <p>+375(29)-728-58-58</p>
@@ -202,6 +264,7 @@
     <script src="js/script.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/modal.js"></script>
+    <script src="js/timer.js"></script>
 
 </body>
 </html>

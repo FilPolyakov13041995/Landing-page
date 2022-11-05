@@ -14,20 +14,27 @@ body {
     user-select: none;
 }
 
+.container {
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+}
 .bg__img {
     background-image: url(/img/V7xo003sr2I.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
 }
 .bg__img1 {
-    background-color: rgb(247, 247, 247);
     background-repeat: repeat;
     background-size: 100%;
 }
 .bg__img2 {
-    background-image: url(/img/teamTorpedo.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
+}
+
+.news-item {
+    background-color: rgb(228, 228, 228);
 }
 
 .window__news {
@@ -197,21 +204,6 @@ a:hover {
     margin: 9px;
 }
 
-.text__news-two {
-    display: none;
-    position: relative;
-    top: 20px;
-    z-index: 1;
-    color: #fff;
-    background: linear-gradient(to right, rgb(27, 27, 27) 30%, rgb(185, 27, 27) 50%);
-    max-width: 300px;
-    height: auto;
-    text-transform: uppercase;
-    font-weight: 500;
-    text-align: center;
-    padding: 7px;
-    margin: 0 auto;
-}
 
 .text__news-three {
     color: #fff;
@@ -258,7 +250,6 @@ a:hover {
 }
 
 .btn__news {
-    display: block;
     height: auto;
     border: none;
     background-color: rgb(224, 59, 59);
@@ -287,6 +278,12 @@ a:hover {
 
 i {
     cursor: pointer;
+}
+
+
+
+.fa-arrow-right-long {
+    font-size: 40px;
 }
 
 .fa-vk,
@@ -326,33 +323,40 @@ button {
 
 /*  страница 2 */
 
-.flex__previous {
-    display: flex;
-    justify-content: center;
-    gap: 2.5rem;
-    margin-top: 40px;
+.previous__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+    padding-top: 50px;
+    background-color: rgb(228, 228, 228);
 }
 
+.grid-item-spec {
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+
+
 .flex__item-previous1 {
-    width: 750px;
-    min-height: 460px;
-    /* background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/wild_oliva.png"); */
     color: #000;
     font-weight: 500;
     padding: 0px 20px 0px 20px;
+    background-color: #eee;
+    text-align: justify;
 }
 
 .true {
     text-align: center;
     text-transform: uppercase;
     color: #000;
-    font-size: 20px;
     font-weight: 600;
-    letter-spacing: 2px;
     margin: 15px 15px;
 }
 .txt-indent {
     text-indent: 20px;
+    padding-bottom: 10px;
 }
 
 .flex__item-previous2 {
@@ -368,39 +372,50 @@ button {
 
 .preview__flex {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 50px;
+    padding: 0px 0px 15px 0px;
+    background-color: rgb(228, 228, 228);
+}
+
+.preview__flex-item {
+    flex-direction: row;
+}
+
+.grunge-arrow {
+    width: 70px;
+    height: auto;
+    cursor: pointer;
+    transform: rotate(25deg)
+}
+
+.grunge-arrow-left {
+    width: 70px;
+    height: auto;
+    cursor: pointer;
+    transform: rotate(210deg)
 }
 
 .preview__match {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 700;
     margin-right: 20px;
-    background-image: linear-gradient(to right, #000000, #c50000, #000000);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    color: #000;
 }
 
-/* Slider */
-.slider__flex {
+/* Slider 2 */
+
+.offer__slider {
     display: flex;
     align-items: center;
+    width: 690px;
+    /* background-color: rgb(180, 180, 180); */
 }
 
-.slider {
-    width: 550px;
-    height: auto;
-}
-/* end slider */
+/* end Slider 2 */
 
 
 /* modal */
-
-.modal__window {
-    flex-direction: row;
-}
 
 .modal {
     position: fixed;
@@ -411,7 +426,7 @@ button {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    background-color: rgba(0, 0, 0, .5)
+    background-color: rgba(0, 0, 0, .5);
 }
 
 .modal__dialog {
@@ -426,11 +441,17 @@ button {
     background-color: #fff;
     overflow-y: auto
 }
+.modal__window {
+    padding: 60px;
+    background: #eee;
+}
+
+.modal__window h2 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
 
 .modal__close {
-    /* position: absolute; */
-    /* top: 0; */
-    /* right: 48%; */
     font-size: 40px;
     color: #000;
     font-weight: 700;
@@ -455,6 +476,7 @@ button {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    margin-left: 90px;
     transition: all 0.3s ease;
 }
 
@@ -462,6 +484,9 @@ button {
     background-color: #d6101a;
 }
 
+.text__video {
+    text-align: center;
+}
 .itd__triangle {
     margin-right: -4px;
     width: 0;
@@ -515,3 +540,72 @@ button {
     height: auto;
     cursor: pointer;
 }
+
+
+.bg__img2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+
+.bg-item {
+    background-color: rgb(245, 245, 245);
+}
+
+.bg__img-item {
+    width: 600px;
+    height: auto;
+}
+
+.text-item2 {
+    width: 600px;
+    color: #000;
+    font-weight: 500;
+    padding: 10px 20px 0px 20px;
+    text-align: justify;
+    background-color: #eee;
+}
+
+
+/* timer */
+h4 {
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer__block {
+    background-color: rgb(227, 31, 31);
+    margin-right: 5px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+.timer__block:last-child {
+    margin-right: 0;
+}
+
+.days,
+.hours,
+.minutes,
+.seconds {
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+}
+
+
+.timer__match {
+    padding: 60px;
+}
+/* end timer */
