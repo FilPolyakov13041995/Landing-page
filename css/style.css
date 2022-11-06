@@ -25,7 +25,7 @@ body {
 }
 
 .bg__img {
-    background-image: url(./img/V7xo003sr2I.jpg);
+    background: url('/img/V7xo003sr2I.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
 }
