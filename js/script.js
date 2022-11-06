@@ -4,7 +4,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const news = document.querySelector('.news');
     const newsItem = Array.from(news.children);
     const btnNext = document.querySelectorAll('#btnNext');
-    const btnPrev = document.querySelector('#btnPrev');
+    const btnPrev = document.querySelectorAll('#btnPrev');
 
     newsItem.forEach((item, index) => {
         // скрываем все новочти кроме первой.
@@ -38,22 +38,22 @@ window.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    
-    btnPrev.addEventListener('click', () => {
-    
-        // скрываем текущую новость
-        const currentNews = news.querySelector('[data-active]');
-        const currentNewsIndex = +currentNews.dataset.index;
-        currentNews.classList.add('hide');
-        currentNews.removeAttribute('data-active');
-    
-        // показывваем следующий слайд
-        const nextNewsIndex = currentNewsIndex === 0 ? newsItem.length - 1 : currentNewsIndex - 1;
-        const nextNews = news.querySelector(`[data-index="${nextNewsIndex}"]`);
-        nextNews.classList.remove('hide');
-        nextNews.setAttribute('data-active', '');
-    
+    btnPrev.forEach(btn => {
+        btn.addEventListener('click', () => {
+            // скрываем текущую новость
+            const currentNews = news.querySelector('[data-active]');
+            const currentNewsIndex = +currentNews.dataset.index;
+            currentNews.classList.add('hide');
+            currentNews.removeAttribute('data-active');
+        
+            // показывваем следующий слайд
+            const nextNewsIndex = currentNewsIndex === 0 ? newsItem.length - 1 : currentNewsIndex - 1;
+            const nextNews = news.querySelector(`[data-index="${nextNewsIndex}"]`);
+            nextNews.classList.remove('hide');
+            nextNews.setAttribute('data-active', '');
+        });
     });
+    
 
 });
 
