@@ -955,6 +955,72 @@ button {
 }
 
 @media screen and (max-width: 480px) {
+    /* title */
+    .card__news-flex {
+        gap: 0.5em;
+        flex-wrap: wrap;
+    }
+    .bg__img {
+        background: url(../img/V7xo003sr2I.jpg);
+        width: 100%;
+        height: auto;
+        background-repeat: no-repeat;
+        background-size: 155%;
+    }
+    .window__news {
+        padding: 10px;
+    }
+    .card__news-item1 {
+        width: 300px;
+        min-height: 165px;
+        margin: 0 auto;
+    }
+    .card__news-item2 {
+        width: 170px;
+        min-height: 122px;
+        margin: 0 auto;
+    }
+    .place__match {
+        font-size: 10px;
+        margin-bottom: 3px;
+    }
+    .date__match {
+        font-size: 10px;
+        letter-spacing: 1px;
+        margin-bottom: 3px;
+    }
+    .time__match {
+        margin-bottom: 3px;
+        letter-spacing: 1px;
+        font-size: 10px;
+    }
+    .vs__match {
+        font-size: 10px;
+        margin-left: 10px;
+    }
+    .name__team {
+        font-size: 11px;
+        margin-bottom: 2px;
+    }
+    .logofc {
+        width: 35px;
+    }
+    .text__news {
+        padding: 5px;
+        margin: 5px auto;
+    }
+    .border__team-name {
+        height: 1px;
+        margin-bottom: 5px;
+    }
+    .text__news-last {
+        max-width: 120px;
+    }
+    .check {
+        font-size: 20px;
+    }
+    /* title end */
+
      /* slide 1 */
      .container-center {
         width: 350px;
@@ -1020,17 +1086,16 @@ button {
     .fa-telegram,
     .fa-envelope,
     .fa-clock {
-    font-size: 20px;
+    font-size: 16px;
     }
     .tel-item {
-        font-size: 10px;
-        width: 110px;
+        font-size: 7px;
     }
     .footer {
-        padding: 5px;
+        padding: 7px;
     }
     .text__footer {
-        font-size: 12px;
+        font-size: 10px;
     }
     /* end slide 2 */
 
