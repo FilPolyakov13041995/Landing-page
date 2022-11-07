@@ -25,10 +25,10 @@ body {
 }
 
 .bg__img {
-    background-image: url('../img/V7xo003sr2I.jpg');
-    background-repeat: no-repeat;
+    background: url('../img/V7xo003sr2I.jpg');
     width: 100%;
-    max-height: 719px;
+    height: auto;
+    background-repeat: no-repeat;
     background-size: 100%;
 }
 
