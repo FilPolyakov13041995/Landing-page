@@ -138,7 +138,7 @@ body {
     font-weight: 500;
     text-align: center;
     background: linear-gradient(to right, rgb(27, 27, 27) 30%, rgb(185, 27, 27) 50%);
-    padding: 5px;
+    padding: 5px 5px 1px 5px;
 }
 
 .logofc {
@@ -839,6 +839,210 @@ button {
     }
     /* end slide 2 */
 
+}
+
+@media screen and (max-width: 768px) {
+    /* title */
+    .header {
+        min-height: 0px;
+    }
+    .logofc__title {
+        margin-left: 5px;
+        width: 35px;
+    }
+    .text__news {
+        padding: 5px;
+        margin: 5px;
+    }
+    .logofc {
+        width: 30px;
+    }
+    .card__news-item1 {
+        width: 400px;
+        min-height: 170px;
+    }
+
+    .last__match-flex {
+        font-size: 10px;
+        margin: 10px 0px 0px 0px;
+    }
+    .card__news-item2 {
+        width: 200px;
+        min-height: 128px;
+    }
+    .img__last-match {
+        width: 30px;
+    }
+    .text__news-last {
+        font-size: 8px;
+        padding: 5px;
+        margin: 5px auto;
+    }
+
+
+    /* title end */
+
+    /* slide 1 */
+    .container-center {
+        width: 450px;
+        margin: 0 auto;
+    }
+    .list__menues {
+        display: none;
+    }
+    .flex__item-previous1 {
+        width: 400px;
+    }
+    .flex__item-previous2 {
+        width: 400px;
+        height: 400px;
+        height: auto;
+    }
+    .check-game {
+        width: 400px;
+    }
+    .offer__slider {
+        width: 400px;
+    }
+    .img__arrow-left {
+        width: 50px;
+    }
+    .img__arrow-right {
+        width: 50px;
+    }
+    .modal__window {
+        border-radius: 50px;
+        padding: 70px;
+    }
+    .text__photo-report {
+        font-size: 16px;
+    }
+    .text__video-report {
+        font-size: 16px;
+    }
+
+    /* end slide 1 */
+
+    /* slide 2 */
+    
+    .text-item2 {
+        width: 400px;
+        margin: 0 auto;
+    }
+    .bg__img-item {
+        width: 400px;
+        margin: 0 auto;
+    }
+    .timer__match {
+        margin-top: 30px;
+        padding: 0px;
+    }
+    .Time p {
+        text-align: center;
+        padding: 10px;
+    }
+    .modal__content {
+        width: 300px;
+        margin: 0 auto;
+    }
+    .text__match-review {
+        font-size: 16px;
+    }
+    .modal__flex {
+        padding: 0px;
+    }
+    /* end slide 2 */
+}
+
+@media screen and (max-width: 480px) {
+     /* slide 1 */
+     .container-center {
+        width: 350px;
+    }
+    .flex__item-previous1 {
+        width: 330px;
+    }
+    .flex__item-previous2 {
+        width: 330px;
+        height: 330px;
+    }
+    .check-game {
+        width: 330px;
+    }
+    .offer__slider {
+        width: 330px;
+    }
+    .img__arrow-left {
+        width: 35px;
+    }
+    .img__arrow-right {
+        width: 35px;
+    }
+    .modal__window {
+        border-radius: 50px;
+        padding: 40px;
+    }
+    .text__photo-report {
+        font-size: 14px;
+    }
+    .text__video-report {
+        font-size: 14px;
+    }
+    .preview__match {
+        font-size: 14px;
+    }
+    .grunge-arrow-left {
+        width: 35px;
+    }
+    .grunge-arrow {
+        width: 35px;
+    }
+
+    /* end slide 1 */
+
+    /* slide 2 */
+    
+    .text-item2 {
+        width: 330px;
+    }
+    .bg__img-item {
+        width: 330px;
+    }
+    .Time p {
+        text-align: center;
+        padding: 10px;
+    }
+    .modal__content {
+        width: 330px;
+    }
+    .fa-vk,
+    .fa-instagram,
+    .fa-telegram,
+    .fa-envelope,
+    .fa-clock {
+    font-size: 20px;
+    }
+    .tel-item {
+        font-size: 10px;
+        width: 110px;
+    }
+    .footer {
+        padding: 5px;
+    }
+    .text__footer {
+        font-size: 12px;
+    }
+    /* end slide 2 */
+
+    /* header */
+    .header {
+        min-height: 0px;
+    }
+    .logofc__title {
+        margin-left: 5px;
+        width: 30px;
+    }
+    /* header end */
 }
 
 
