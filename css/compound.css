@@ -17,7 +17,6 @@ body{
     font-size: 17px;
     outline: none;
     color: #000;
-    position: relative;
     font-weight: 500;
     cursor: pointer;
 }
@@ -79,6 +78,7 @@ button:hover {
 .player__name {
     padding-top: 10px;
 }
+
 
 @media screen and (max-width: 1200px) {
     .button {

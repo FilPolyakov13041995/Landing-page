@@ -19,27 +19,46 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 <body>
-<header class="header">
-    <div class="menu__flex">
-        <div class="menu__flex_item">
-            <a href="index.html"><img class="logofc__title" src="img/logored.png" alt="logofc"></a>
-        </div>
-        <div class="header__rigth">
-            <ul class="list__menues">
-                <a href="compound.html"><li class="title__menu">Состав</li></a>
-                <a href="#!"><li class="title__menu">Фан-клуб</li></a>
-                <a href="#!"><li class="title__menu">О команде</li></a>
-                <a href="#!"><li class="title__menu">История</li></a>
-                <a href="#!"><li class="title__menu">Контакты</li></a>
-            </ul>
-            <!-- <a class="burger">
-                <span class="burger__line"></span>
-                <span class="burger__line"></span>
-                <span class="burger__line"></span>
-            </a> -->
+
+    <div class="container">
+        <nav class="menu">
+            <img src="img/logoBlack.png" class="logofc__burger-menu" alt="logoBlack">
+            <li><a href="compound.html">Состав</a></li>
+            <li><a href="#!">Фан-клуб</a></li>
+            <li><a href="#!">О команде</a></li>
+            <li><a href="#!">История</a></li>
+            <li><a href="#!">Контакты</a></li>
+            <div class="icons-item-burger">
+                <a href="#!"><i class="fa-brands fa-vk"></i></a>
+                <a href="#!"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#!"><i class="fa-brands fa-telegram"></i></a>
+                <a href="#!"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <p class="text__burger-menu">Всем нам очень нужное!<i class="fa-sharp fa-solid fa-heart"></i></p>
+        </nav>
+        <div class="header">
+            <div class="menu__flex">
+                <div class="menu__flex_item">
+                    <a href="index.html"><img class="logofc__title" src="img/logored.png" alt="logofc"></a>
+                </div>
+                <div class="header__rigth">
+                    <ul class="list__menues">
+                        <a href="compound.html"><li class="title__menu">Состав</li></a>
+                        <a href="#!"><li class="title__menu">Фан-клуб</li></a>
+                        <a href="#!"><li class="title__menu">О команде</li></a>
+                        <a href="#!"><li class="title__menu">История</li></a>
+                        <a href="#!"><li class="title__menu">Контакты</li></a>
+                    </ul>
+                </div>
+                <div class="burger">
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                </div>
+            </div>
         </div>
     </div>
-</header>
+
 <section class="all">
     <div class="filter">
         <button class="button btn-flex button_type_all" data-filter="all">Команда</button>
@@ -310,5 +329,6 @@
 
 
     <script src="js/compound.js"></script>
+    <script src="js/burger.js"></script>
 </body>
 </html>

@@ -617,6 +617,106 @@ button {
 }
 /* end timer */
 
+/* burger */
+.menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    background-image: linear-gradient(90deg, #ee3d3d 0%, #e71f1f 35%, #a10a0a 100%);
+    transform: translate(-100%);
+    transition: transform 0.3s;
+}
+
+.menu.active {
+    transform: translateX(0);
+}
+
+.menu li {
+    list-style-type: none;
+    max-width: 100px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 3px;
+    text-align: center;
+    margin: 10px auto;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.menu li:hover {
+    background-color: rgba(71, 71, 71, 0.3);
+}
+
+.icons-item-burger {
+    display: flex;
+    justify-content: center;
+    gap: 0.2em;
+    margin-top: 20px;
+}
+.logofc__burger-menu {
+    display: block;
+    width: 50px;    
+    height: auto;
+    margin: 0 auto;
+}
+
+.text__burger-menu {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    padding: 10px;
+}
+
+.icons-item-burger i {
+    font-size: 25px;
+}
+
+.burger {
+    display: none;
+    width: 30px;    
+    height: 30px;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+
+
+/* burger */
+.burger span {
+    width: 30px;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    transition: all 0.5s;
+}
+
+.burger span:nth-of-type(2) {
+    top: calc(50% - 8px);
+}
+
+.burger span:nth-of-type(3) {
+    top: calc(50% + 8px);
+}
+
+.burger.active span:first-of-type {
+    transform: translateX(100%);
+}
+.burger.active span:nth-of-type(2) {
+    transform: translate(-50%, -50%) rotate(45deg);
+    top: 50%;
+}
+
+.burger.active span:nth-of-type(3) {
+    transform: translate(-50%, -50%) rotate(-45deg);
+    top: 50%;
+}
+/* burger end */
 
 /* Media */
 
@@ -889,6 +989,9 @@ button {
     }
     .list__menues {
         display: none;
+    }
+    .burger {
+        display: block;
     }
     .flex__item-previous1 {
         width: 400px;
