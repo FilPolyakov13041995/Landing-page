@@ -138,7 +138,7 @@ body {
     font-weight: 500;
     text-align: center;
     background: linear-gradient(to right, rgb(27, 27, 27) 30%, rgb(185, 27, 27) 50%);
-    padding: 5px 5px 1px 5px;
+    padding: 5px 5px 5px 5px;
 }
 
 .logofc {
@@ -290,14 +290,16 @@ i {
 .fa-instagram,
 .fa-telegram,
 .fa-envelope,
-.fa-clock {
+.fa-clock,
+.fa-youtube {
     font-size: 30px;
 }
 
 .fa-vk:hover,
 .fa-instagram:hover,
 .fa-telegram:hover,
-.fa-envelope:hover {
+.fa-envelope:hover,
+.fa-youtube:hover {
     color: black;
 }
 
@@ -591,7 +593,11 @@ button {
     justify-content: center;
     align-items: center;
 }
-
+.Time p {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
 .timer__block {
     background-color: rgb(227, 31, 31);
     margin-right: 5px;
@@ -636,13 +642,13 @@ button {
 
 .menu li {
     list-style-type: none;
-    max-width: 100px;
+    max-width: 200px;
     color: #fff;
-    font-size: 15px;
+    font-size: 25px;
     font-weight: 500;
-    padding: 3px;
+    padding: 8px;
     text-align: center;
-    margin: 10px auto;
+    margin: 20px auto;
     background-color: rgba(255, 255, 255, 0.3);
 }
 
@@ -653,25 +659,25 @@ button {
 .icons-item-burger {
     display: flex;
     justify-content: center;
-    gap: 0.2em;
-    margin-top: 20px;
+    gap: 1em;
+    margin-top: 60px;
 }
 .logofc__burger-menu {
     display: block;
-    width: 50px;    
+    width: 100px;    
     height: auto;
     margin: 0 auto;
 }
 
 .text__burger-menu {
-    font-size: 20px;
+    font-size: 35px;
     font-weight: 500;
     text-align: center;
-    padding: 10px;
+    padding: 50px;
 }
 
 .icons-item-burger i {
-    font-size: 25px;
+    font-size: 45px;
 }
 
 .burger {
@@ -716,6 +722,10 @@ button {
     transform: translate(-50%, -50%) rotate(-45deg);
     top: 50%;
 }
+
+.adaptive {
+    display: none;
+}
 /* burger end */
 
 /* Media */
@@ -724,6 +734,9 @@ button {
     .container-center {
         width: 980px;
         margin: 0 auto;
+    }
+    .adaptive {
+        display: none;
     }
     .previous__grid {
         display: grid;
@@ -825,7 +838,7 @@ button {
     .fa-instagram,
     .fa-telegram,
     .fa-envelope,
-    .fa-clock {
+    .fa-youtube {
     font-size: 2vw;
     }
     .border__team-name {
@@ -1040,10 +1053,6 @@ button {
         margin-top: 30px;
         padding: 0px;
     }
-    .Time p {
-        text-align: center;
-        padding: 10px;
-    }
     .modal__content {
         width: 300px;
         margin: 0 auto;
@@ -1061,21 +1070,24 @@ button {
     /* title */
     .card__news-flex {
         gap: 0.5em;
-        flex-wrap: wrap;
+        display: none;
+    }
+    .adaptive {
+        display: block;
     }
     .bg__img {
         background: url(../img/V7xo003sr2I.jpg);
         width: 100%;
         height: auto;
         background-repeat: no-repeat;
-        background-size: 155%;
+        background-size: 100%;
     }
     .window__news {
         padding: 10px;
     }
     .card__news-item1 {
-        width: 300px;
-        min-height: 165px;
+        width: 375px;
+        min-height: 200px;
         margin: 0 auto;
     }
     .card__news-item2 {
@@ -1083,34 +1095,38 @@ button {
         min-height: 122px;
         margin: 0 auto;
     }
+    .card__two-wrapper {
+        padding: 20px;
+        background-color: #eee;
+    }
     .place__match {
-        font-size: 10px;
+        font-size: 13px;
         margin-bottom: 3px;
     }
     .date__match {
-        font-size: 10px;
+        font-size: 13px;
         letter-spacing: 1px;
         margin-bottom: 3px;
     }
     .time__match {
         margin-bottom: 3px;
         letter-spacing: 1px;
-        font-size: 10px;
+        font-size: 13px;
     }
     .vs__match {
-        font-size: 10px;
+        font-size: 15px;
         margin-left: 10px;
     }
     .name__team {
-        font-size: 11px;
+        font-size: 14px;
         margin-bottom: 2px;
     }
     .logofc {
-        width: 35px;
+        width: 55px;
     }
     .text__news {
         padding: 5px;
-        margin: 5px auto;
+        margin: 0px auto;
     }
     .border__team-name {
         height: 1px;
@@ -1129,17 +1145,17 @@ button {
         width: 350px;
     }
     .flex__item-previous1 {
-        width: 330px;
+        width: 350px;
     }
     .flex__item-previous2 {
-        width: 330px;
-        height: 330px;
+        width: 350px;
+        height: 350px;
     }
     .check-game {
-        width: 330px;
+        width: 350px;
     }
     .offer__slider {
-        width: 330px;
+        width: 340px;
     }
     .img__arrow-left {
         width: 35px;
@@ -1172,33 +1188,33 @@ button {
     /* slide 2 */
     
     .text-item2 {
-        width: 330px;
+        width: 350px;
     }
     .bg__img-item {
-        width: 330px;
+        width: 350px;
     }
     .Time p {
-        text-align: center;
-        padding: 10px;
+        font-size: 16px;
     }
     .modal__content {
-        width: 330px;
+        width: 350px;
     }
     .fa-vk,
     .fa-instagram,
     .fa-telegram,
     .fa-envelope,
-    .fa-clock {
-    font-size: 16px;
+    .fa-youtube{
+    font-size: 20px;
     }
     .tel-item {
-        font-size: 7px;
+        font-size: 8px;
     }
     .footer {
+        height: 60px;
         padding: 7px;
     }
     .text__footer {
-        font-size: 10px;
+        font-size: 13px;
     }
     /* end slide 2 */
 
@@ -1208,11 +1224,28 @@ button {
     }
     .logofc__title {
         margin-left: 5px;
-        width: 30px;
+        width: 35px;
     }
     /* header end */
 }
 
+@media screen and (max-width: 414px) {
+    .card__news-item1 {
+        width: 345px;
+        min-height: 191px;
+        margin: 0 auto;
+    }
+    .logofc {
+        width: 50px;
+    }
+    .flex__vs {
+        gap: 1em;
+        margin-top: 5px;
+    }
+    .border__team-name {
+        height: 2px;
+    }
+}
 
 
 /* end Media */
