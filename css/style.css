@@ -660,7 +660,7 @@ button {
     display: flex;
     justify-content: center;
     gap: 1em;
-    margin-top: 60px;
+    margin-top: 30px;
 }
 .logofc__burger-menu {
     display: block;
@@ -673,7 +673,7 @@ button {
     font-size: 35px;
     font-weight: 500;
     text-align: center;
-    padding: 50px;
+    padding: 30px;
 }
 
 .icons-item-burger i {
@@ -1073,14 +1073,14 @@ button {
         display: none;
     }
     .adaptive {
-        display: block;
+        display: block;   
     }
     .bg__img {
         background: url(../img/V7xo003sr2I.jpg);
         width: 100%;
         height: auto;
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-size: 140%;
     }
     .window__news {
         padding: 10px;
@@ -1091,13 +1091,13 @@ button {
         margin: 0 auto;
     }
     .card__news-item2 {
-        width: 170px;
-        min-height: 122px;
+        width: 375px;
+        min-height: 191px;
         margin: 0 auto;
     }
     .card__two-wrapper {
-        padding: 20px;
-        background-color: #eee;
+        padding: 10px;
+        background-image: linear-gradient(90deg, #353434 0%, #1b1b1b 35%, #4e4e4e 100%);
     }
     .place__match {
         font-size: 13px;
@@ -1133,10 +1133,18 @@ button {
         margin-bottom: 5px;
     }
     .text__news-last {
-        max-width: 120px;
+        max-width: 200px;
+        margin: 0px auto;
+        font-size: 12px;
+    }
+    .img__last-match {
+        width: 70px;
     }
     .check {
-        font-size: 20px;
+        font-size: 50px;
+    }
+    .last__detailed-match {
+        font-size: 15px;
     }
     /* title end */
 
@@ -1231,6 +1239,11 @@ button {
 
 @media screen and (max-width: 414px) {
     .card__news-item1 {
+        width: 345px;
+        min-height: 191px;
+        margin: 0 auto;
+    }
+    .card__news-item2 {
         width: 345px;
         min-height: 191px;
         margin: 0 auto;
