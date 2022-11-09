@@ -744,8 +744,8 @@ button {
 /* table */
 table {
     width: 100%; 
-    border-spacing: 0; 
-    background-color: rgb(248, 248, 248);
+    border-spacing: 0;
+    background-color: rgb(230, 230, 230);
 }
 
 tr:nth-child(2) {
@@ -764,7 +764,7 @@ caption {
     font-size: 23px;
     font-weight: 600;
     padding: 15px;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(230, 230, 230);
 }
 
 th {
@@ -783,6 +783,29 @@ td {
 
 /* table end */
 
+
+/* season */
+.season__grid {
+    display: grid;
+    grid-template-columns: repeat(5, 19%);
+    gap: 1em;
+    padding: 5px;
+    background-color: #eee;
+}
+
+
+.text__title-season {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 3px;
+    padding: 20px;
+    background-color: #eee;
+}
+.match__description {
+    background-color: #eee;
+}
+/* season end */
 
 /* Media */
 
@@ -830,6 +853,12 @@ td {
     .text-item2 {
         width: 500px;
     }
+    /* season */
+    .season__grid {
+        grid-template-columns: repeat(4, 23%);
+        justify-content: center;
+    }
+    /* season end */
 
 }
 
@@ -843,6 +872,12 @@ td {
     .text__news-last {
         max-width: 200px;
     }
+    /* season */
+    .season__grid {
+        grid-template-columns: repeat(3, 30%);
+        justify-content: center;
+    }
+    /* season end */
 }
 
 @media screen and (max-width: 982px) {
@@ -1124,6 +1159,13 @@ td {
         padding: 0px;
     }
     /* end slide 2 */
+
+    /* season */
+    .season__grid {
+        grid-template-columns: repeat(2, 48%);
+        justify-content: center;
+    }
+    /* season end */
 }
 
 @media screen and (max-width: 480px) {
@@ -1301,6 +1343,13 @@ td {
         width: 35px;
     }
     /* header end */
+
+    /* season */
+    .season__grid {
+        grid-template-columns: repeat(1, 99%);
+        justify-content: center;
+    }
+    /* season end */
 }
 
 @media screen and (max-width: 414px) {
