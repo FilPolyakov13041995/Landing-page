@@ -5,6 +5,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const newsItem = Array.from(news.children);
     const btnNext = document.querySelectorAll('#btnNext');
     const btnPrev = document.querySelectorAll('#btnPrev');
+    const tdTable = document.querySelectorAll('td');
 
     newsItem.forEach((item, index) => {
         // скрываем все новочти кроме первой.
@@ -53,6 +54,11 @@ window.addEventListener('DOMContentLoaded', () => {
             nextNews.setAttribute('data-active', '');
         });
     });
+
+    tdTable.forEach(td => {
+        td.classList.add('border__table');
+    }); 
+
     
 
 });
