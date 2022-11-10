@@ -637,14 +637,12 @@ table {
     color: #fff;
 }
 tr:nth-child(2) {
-    color: gold;
+    color: lightseagreen;
 }
 tr:nth-child(3) {
-    color:#c0c0c0;
+    color: lightseagreen;
 }
-tr:nth-child(4) {
-    color: #cd7f32;
-}
+
 td:nth-child(even) {
     font-size: 18px;
     font-weight: 500;
@@ -695,8 +693,61 @@ td {
 }
 /* season end */
 
-/* Media */
 
+/* contacts */
+.bg__contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    padding: 150px;
+    color: rgba(255, 255, 255, 0.938);
+    background-image: linear-gradient(90deg, #ee3d3d 0%, #e71f1f 35%, #a10a0a 100%);
+}
+
+.fa-phone,
+.fa-globe,
+.fa-paper-plane {
+    font-size: 200px;
+}
+.contact,
+.adress__club,
+.adress__stadium {
+    padding: 10px;
+    margin-left: 30px;
+}
+.border__contact {
+    width: 300px;
+    border: 3px solid rgba(0, 0, 0, 0.452);
+}
+.contact h1 {
+    font-size: 55px;
+}
+.adress__club h2,
+.adress__stadium h2,
+.phone__boss h2 {
+    font-size: 40px;
+}
+.adress__club p,
+.adress__stadium p {
+    font-size: 30px;
+}
+.phone__boss,
+.phone__admin {
+    padding: 10px;
+    margin-left: 30px;
+}
+.phone__boss h2 {
+    font-size: 40px;
+}
+.phone__boss p,
+.phone__admin p {
+    font-size: 30px;
+}
+/* contacts end */
+
+
+/* Media */
 @media screen and (max-width: 1200px) {
     .container-center {
         width: 980px;
@@ -746,6 +797,13 @@ td {
     }
     /* season end */
 
+    /* contacts */
+    .fa-phone,
+    .fa-globe,
+    .fa-paper-plane {
+        font-size: 150px;
+    }
+    /* contacts end */
 }
 
 @media screen and (max-width: 1100px) {
@@ -1046,6 +1104,12 @@ td {
         justify-content: center;
     }
     /* season end */
+
+    .fa-phone,
+    .fa-globe,
+    .fa-paper-plane {
+        font-size: 100px;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -1226,6 +1290,12 @@ td {
         justify-content: center;
     }
     /* season end */
+
+    .fa-phone,
+    .fa-globe,
+    .fa-paper-plane {
+        font-size: 50px;
+    }
 }
 
 @media screen and (max-width: 414px) {

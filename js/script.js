@@ -6,6 +6,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const btnNext = document.querySelectorAll('#btnNext');
     const btnPrev = document.querySelectorAll('#btnPrev');
     const tdTable = document.querySelectorAll('td');
+    
 
     newsItem.forEach((item, index) => {
         // скрываем все новочти кроме первой.
