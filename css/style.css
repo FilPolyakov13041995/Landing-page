@@ -727,6 +727,7 @@ td {
 .adress__stadium h2,
 .phone__boss h2 {
     font-size: 40px;
+    margin-bottom: 20px;
 }
 .adress__club p,
 .adress__stadium p {
@@ -742,6 +743,10 @@ td {
 }
 .phone__boss p,
 .phone__admin p {
+    font-size: 25px;
+}
+.phone__boss h3,
+.phone__admin h3 {
     font-size: 30px;
 }
 /* contacts end */
