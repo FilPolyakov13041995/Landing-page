@@ -712,7 +712,9 @@ td {
 }
 .contact,
 .adress__club,
-.adress__stadium {
+.adress__stadium,
+.phone__boss,
+.phone__admin {
     padding: 10px;
     margin-left: 30px;
 }
@@ -721,33 +723,35 @@ td {
     border: 3px solid rgba(0, 0, 0, 0.452);
 }
 .contact h1 {
-    font-size: 55px;
+    font-size: 4.5vw;
 }
 .adress__club h2,
 .adress__stadium h2,
 .phone__boss h2 {
-    font-size: 40px;
+    font-size: 3vw;
     margin-bottom: 20px;
 }
 .adress__club p,
 .adress__stadium p {
-    font-size: 30px;
-}
-.phone__boss,
-.phone__admin {
-    padding: 10px;
-    margin-left: 30px;
-}
-.phone__boss h2 {
-    font-size: 40px;
+    font-size: 2.5vw;
 }
 .phone__boss p,
 .phone__admin p {
-    font-size: 25px;
+    font-size: 2vw;
 }
 .phone__boss h3,
 .phone__admin h3 {
-    font-size: 30px;
+    font-size: 2.5vw;
+}
+.phone {
+	color: #000;
+	font-size: 2vw;
+	font-weight: 900;
+}
+.phone a {
+	color: #000;
+	font-size: 2vw;
+	font-weight: 900;
 }
 /* contacts end */
 
