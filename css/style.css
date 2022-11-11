@@ -529,7 +529,7 @@ button {
 }
 .menu.active {
     transform: translateX(0);
-    overflow-x: hidden;
+    overflow: hidden;
 }
 .menu li {
     list-style-type: none;
