@@ -1305,6 +1305,35 @@ td {
     .fa-paper-plane {
         font-size: 50px;
     }
+
+
+    .contact h1 {
+        font-size: 40px;
+    }
+    .adress__club h2,
+    .adress__stadium h2,
+    .phone__boss h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .adress__club p,
+    .adress__stadium p {
+        font-size: 22px;
+    }
+    .phone__boss p,
+    .phone__admin p {
+        font-size: 18px;
+    }
+    .phone__boss h3,
+    .phone__admin h3 {
+        font-size: 20px;
+    }
+    .phone {
+        font-size: 16px;
+    }
+    .phone a {
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 414px) {
