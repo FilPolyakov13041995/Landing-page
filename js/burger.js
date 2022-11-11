@@ -12,15 +12,6 @@ menuBurger.addEventListener('click', () => {
         body.style.position = '';
     }
 
-    if (body.requestFullscreen) {
-    body.requestFullscreen();
-    } else if (body.webkitrequestFullscreen) {
-    body.webkitrequestFullscreen();
-    } else if (body.mozrequestFullscreen) {
-    body.mozrequestFullscreen();
-    } else if (body.msrequestFullscreen) {
-    body.msrequestFullscreen();
-    }
 
 });
 
