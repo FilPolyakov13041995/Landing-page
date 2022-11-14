@@ -1,5 +1,7 @@
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -683,7 +685,6 @@ td {
     padding: 5px;
     background-color: #eee;
 }
-
 .text__title-season {
     font-size: 30px;
     font-weight: 600;
@@ -694,6 +695,13 @@ td {
 }
 .match__description {
     background-color: #eee;
+}
+figure {
+    background-color: #fff;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
 }
 /* season end */
 
