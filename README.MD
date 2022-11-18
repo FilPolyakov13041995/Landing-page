@@ -1,9 +1,8 @@
-## [Страничка ФК "Жодино-Южное"](https://filpolyakov13041995.github.io/Landing-page/)
-***
+## [Page ФК "Жодино-Южное"](https://filpolyakov13041995.github.io/Landing-page/)
 
 <img src="img/logored.png" width="200" height="auto" alt="logofc">
 
-### Использовались стандартные технологии:
+### Standard technologies used:
 
 * ## __HTML__
 * ## __CSS__
