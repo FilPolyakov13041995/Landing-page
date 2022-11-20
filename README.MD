@@ -14,3 +14,4 @@
     * #### ___Modal___
     * #### ___Burger-menu___
     * #### ___Timer___
+    * #### ___Classes___
